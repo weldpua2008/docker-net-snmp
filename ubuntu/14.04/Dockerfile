@@ -4,7 +4,7 @@ MAINTAINER Valeriy Solovyov <weldpua2008@gmail.com>
 
 RUN export  DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
-    apt-get -y install snmp snmpd snmp-mibs-downloader && \
+    apt-get -y install snmp snmpd  && \
     rm -r /var/lib/apt/lists/*
 
 EXPOSE 161:161/udp
