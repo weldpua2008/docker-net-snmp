@@ -3,8 +3,10 @@ FROM ubuntu:14.04
 MAINTAINER Valeriy Solovyov <weldpua2008@gmail.com>
 
 RUN export  DEBIAN_FRONTEND=noninteractive && \
+    echo "deb http://archive.ubuntu.com/ubuntu/ trusty-security multiverse" >> /etc/apt/sources.list && \
+    echo "deb-src http://archive.ubuntu.com/ubuntu/ trusty-security multiverse" >> /etc/apt/sources.list && \
     apt-get update && \
-    apt-get -y install snmp snmpd  && \
+    apt-get -y install snmp snmpd snmp-mibs-downloader && \
     rm -r /var/lib/apt/lists/*
 
 EXPOSE 161:161/udp
