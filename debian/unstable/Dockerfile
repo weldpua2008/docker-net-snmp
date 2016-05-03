@@ -4,6 +4,7 @@ MAINTAINER Valeriy Solovyov <weldpua2008@gmail.com>
 
 RUN export  DEBIAN_FRONTEND=noninteractive && \
      export DEBIAN_RELEASE=$(awk -F'[" ]' '/VERSION=/{print $3}'  /etc/os-release | tr -cd '[[:alnum:]]._-' ) && \
+     [[ "x${DEBIAN_RELEASE}" = "x" ]] && export DEBIAN_RELEASE="unstable" && \
      echo "remove main from /etc/apt/sources.list" && \
      sed -i '/main/d' /etc/apt/sources.list && \
      echo "remove contrib from /etc/apt/sources.list" && \
