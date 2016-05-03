@@ -1,4 +1,4 @@
-[![Docker Pulls](https://img.shields.io/docker/pulls/weldpua2008/docker-net-snmp.svg)](https://hub.docker.com/r/weldpua2008/docker-net-snmp/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/weldpua2008/net-snmp.svg)](https://hub.docker.com/r/weldpua2008/net-snmp/)
 [![Docker Stars](https://img.shields.io/docker/stars/weldpua2008/net-snmp.svg)](https://hub.docker.com/r/weldpua2008/net-snmp/)
 [![dockeri.co](http://dockeri.co/image/weldpua2008/net-snmp)](https://hub.docker.com/r/weldpua2008/net-snmp/)
 
